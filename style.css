@@ -1,17 +1,21 @@
+@import url(https://www.hioscar.com/_next/static/media/LetteraTextLLTT-Bold.6a04f880b4f319e748452130ebdbf8d8.woff2);
+@import url( https://www.hioscar.com/_next/static/media/LetteraTextLLTT-Regular.ae0295d68c7d5b41f42848526404ea44.woff2);
+@import url(https://www.hioscar.com/_next/static/media/heldane-display-regular.02ff36d0472502d5217ad1e9a96746f4.woff2);
 * {
     /* outline: 2px solid red; */
 }
+
 
 body {
     margin: 0;
 }
 
 .top-nav {
-    background: black;
+    background: #1c1b1b;
     color: white;
     text-align: right;
     padding-right: 20px;
-    height: 12vh;
+    height: 3em;
 }
 
 .top-nav ul {
@@ -35,6 +39,7 @@ body {
 .main-nav nav ul {
     display: inline-flex;
     margin: 0;
+    padding-left: 2em;
 }
 
 
@@ -44,8 +49,30 @@ main {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
+    background-color: #4f50ff;
+    font-family: Lettera,Open Sans,sans-serif;
 }
 
+@media (max-width:800px) {
+    #whitenav,#doc, main section img {
+        display: none;
+    }
+}
 
+h1 {
+    color: white;
+    font-size: 3em;
+    padding: 25px;
+}
 
+p {
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+}
+button {
+    background: white;
+
+}
